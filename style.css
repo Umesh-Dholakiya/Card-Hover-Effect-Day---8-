@@ -5,8 +5,16 @@ body {
     background: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
     font-family: sans-serif;
+    background-color: #f1f1f1; 
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container .card {
@@ -20,12 +28,23 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    background: #f00;
     transition: 0.7s;
+    z-index: 1;
 }
 
 .container .card:nth-child(1) .icon {
     background: #e07768;
 }
+
+.container .card:nth-child(2) .icon {
+    background: #6eadd4;
+}
+
+.container .card:nth-child(3) .icon {
+    background: #4aada9;
+}
+
 
 .container .card .icon .fa {
     position: absolute;
@@ -63,7 +82,7 @@ i {
     transform: translateY(100px);
 }
 
-.container .card:hover .face.face1 {
+.container .card:hover .face.face1{
     background: #ff0057;
     transform: translateY(0px);
 }
@@ -77,7 +96,7 @@ i {
     opacity: 1;
 }
 
-.container .card .face.face1 .content i {
+.container .card .face.face1 .content i{
     max-width: 100px;
 }
 
@@ -89,11 +108,11 @@ i {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(134, 130, 130, 0.8);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
     transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2 {
+.container .card:hover .face.face2{
     transform: translateY(0);
 }
 
@@ -111,7 +130,7 @@ i {
     font-size: 24px;
     text-align: center;
     color: #414141;
-}
+} 
 
 .container a {
     text-decoration: none;
